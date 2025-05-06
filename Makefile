@@ -50,7 +50,7 @@ bin: $(MKIMG)
 
 src/build_info.h:
 	@echo -n '#define MKIMAGE_COMMIT 0x' > src/build_info.h
-	@git rev-parse --short=8 HEAD >> src/build_info.h
+	@echo 'POSTMARKETOS' >> src/build_info.h
 	@echo '' >> src/build_info.h
 
 help:
